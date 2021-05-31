@@ -3,7 +3,7 @@ import Photo from "./Photo";
 import update from "immutability-helper";
 
 export default function PhotosDisplay({ photos, setPhotos }) {
-  console.log(photos);
+  // console.log(photos);
 
   const moveImage = (dragIndex, hoverIndex) => {
     const draggedImage = photos[dragIndex];

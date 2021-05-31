@@ -3,8 +3,8 @@ import CancelIcon from "@material-ui/icons/Cancel";
 import { useEffect, useRef } from "react";
 import { useDrag, useDrop } from "react-dnd";
 
-const MAX_WIDTH = 1024;
-const MAX_HEIGHT = 1024;
+const MAX_WIDTH = 1920;
+const MAX_HEIGHT = 1080;
 
 const resizeImage = (img) => {
   let canvas = document.createElement("canvas");

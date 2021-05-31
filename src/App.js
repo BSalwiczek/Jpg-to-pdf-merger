@@ -1,19 +1,16 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import { useState, useEffect } from "react";
 
-import Uploader from "./components/Uploader";
-import Merger from "./components/Merger";
-import PhotosDisplay from "./components/PhotosDisplay";
+import Uploader from "./Uploader";
+import Merger from "./Merger";
+import PhotosDisplay from "./PhotosDisplay";
 import { ButtonGroup } from "@material-ui/core";
 import LinearProgress from "@material-ui/core/LinearProgress";
-import Sorter from "./components/Sorter";
+import Sorter from "./Sorter";
 
 const HTML5Backend = require("react-dnd-html5-backend").HTML5Backend;
 const DndProvider = require("react-dnd").DndProvider;
 
-export default function Home() {
+export default function App() {
   const [photos, setPhotos] = useState([]);
   const [progress, setProgress] = useState(0);
 
